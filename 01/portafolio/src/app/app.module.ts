@@ -12,6 +12,8 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DocumentacionComponent } from './pages/documentacion/documentacion.component';
 
+import {HttpClientModule} from '@angular/common/http';
+import { from } from 'rxjs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,8 @@ import { DocumentacionComponent } from './pages/documentacion/documentacion.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
